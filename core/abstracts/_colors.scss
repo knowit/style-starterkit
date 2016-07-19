@@ -1,0 +1,32 @@
+//Naming colours: http://davidwalsh.name/sass-color-variables-dont-suck
+$primary-color: #a0d1ca;
+$mine-shaft: #444;
+$silver-chalice: #6d6d6d;
+$french-gray: #bbb;
+$wild-sand: #eee;
+
+.profile-color {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  &--1 {
+    background-color: $mine-shaft;
+  }
+
+  &--2 {
+    background-color: $silver-chalice;
+  }
+
+  &--3 {
+    background-color: $french-gray;
+  }
+
+  &--4 {
+    background-color: $wild-sand;
+  }
+}

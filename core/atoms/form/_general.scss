@@ -1,0 +1,94 @@
+@import '../../abstracts/colors';
+
+$form-action-color: #0073b2;
+$form-box-shadow: none;
+$form-box-shadow-focus: none;
+$form-border-radius: 0;
+$form-border-color: #d1d1d1;
+$form-border: 1px solid $form-border-color;
+$form-background-color: #fff;
+$form-placeholder-color: $french-gray;
+
+fieldset {
+  background-color: lighten($form-border-color, 40%);
+  border: 0;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 20px / 2;
+
+  &.required {
+    &::after {
+      content: '*';
+    }
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+#{$all-text-inputs},
+select,
+textarea {
+  background-color: $form-background-color;
+  border: $form-border;
+  border-radius: $form-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  padding: 12px;
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+    border-color: darken($form-border-color, 10%);
+  }
+
+  &:focus {
+    border-color: $form-action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: darken($form-background-color, 6%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $form-border;
+    }
+  }
+
+  &::placeholder {
+    color: $form-placeholder-color;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input {
+  &[type='file'] {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  &[type='checkbox'] {
+    display: inline;
+    margin-right: 20px / 2;
+  }
+}

@@ -1,0 +1,22 @@
+$link-color: #57728b;
+$link-hover-color: darken($link-color, 5%);
+$link-active-color: darken($link-color, 10%);
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    color: $link-active-color;
+  }
+}

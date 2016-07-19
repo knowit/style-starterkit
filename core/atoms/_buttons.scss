@@ -1,0 +1,9 @@
+@import '../abstracts/buttons';
+
+.primary-button {
+  @include primary-button;
+}
+
+.edit-button {
+  @include edit-button;
+}

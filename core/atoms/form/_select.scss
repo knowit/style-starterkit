@@ -1,0 +1,22 @@
+// Select / Dropdown
+//
+// A dropdown allows users to select one option from a list.
+//
+// Markup: select.hbs
+//
+// Weight: 3
+//
+// Style guide: form.select
+
+
+.select {
+  $background: #fff;
+  appearance: none;
+  cursor: pointer;
+  background-image: url('/images/arrow-down.svg');
+  background-color: $background;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: right;
+  height: 45px;
+}

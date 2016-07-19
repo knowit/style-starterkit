@@ -1,0 +1,10 @@
+$first-breakpoint-value: 768px;   // Extra small devices
+$second-breakpoint-value: 992px;  // Medium devices
+$third-breakpoint-value: 1200px;  // Large devices
+
+$total-columns: 12 !default;
+// Neat Overrides
+$column: 90px;
+$gutter: 30px;
+$grid-columns: $total-columns;
+$max-width: 1170px;

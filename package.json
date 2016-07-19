@@ -1,0 +1,39 @@
+{
+  "name": "style-starterkit",
+  "description": "Basic styling to get you started on your unique project!",
+  "version": "0.0.1",
+  "repository": "https://github.knowit.no/knowit/style-starterkit",
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-sass": "^2.1.1",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "normalize.css": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=5.0"
+  },
+  "scripts": {
+    "prepublish": "gulp build"
+  },
+  "keywords": [
+    "Kickstarter",
+    "Basic style",
+    "Atomic Web Design",
+    "Node",
+    "Gulp"
+  ],
+  "author": {
+    "name": "Torleif Halseth",
+    "email": "torleif.halseth@knowit.no",
+    "url": "http://github.com/thalseth"
+  },
+  "contributors": [],
+  "license": "Apache-2.0"
+}

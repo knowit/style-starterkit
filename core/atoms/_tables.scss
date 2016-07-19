@@ -1,0 +1,28 @@
+$table-border-color: #979797;
+$th-border-bottom: 1px solid darken($table-border-color, 15%);
+$td-border-bottom: 1px solid $table-border-color;
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: $th-border-bottom;
+  font-weight: 600;
+  padding: 20px 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: $td-border-bottom;
+  padding: 20px 0;
+}
+
+td,
+th,
+tr {
+  vertical-align: middle;
+}

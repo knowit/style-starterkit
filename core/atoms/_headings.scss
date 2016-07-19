@@ -1,0 +1,32 @@
+@import 'bourbon', '../abstracts/typography', '../abstracts/grid';
+
+// **, **, mobil, m-viewport, l-viewport, font-weight
+$font-list: (
+  (h1, em(32px), em(40px), em(48px), 400, #6c6c6c, $heading-font-family),
+      (h2, em(26px), em(32px), em(36px), 400, #6c6c6c, $heading-font-family),
+        (h3, em(22px), em(24px), em(28px), 400, #6c6c6c, $heading-font-family),
+          (h4, em(18px), em(18px), em(18px), bold, #4a4a4a, $heading-font-family),
+            (h5, em(16px), em(16px), em(16px), bold, #4a4a4a, $heading-font-family),
+              (h6, em(16px), em(16px), em(16px), bold, #4a4a4a, $heading-font-family));
+
+@each $value in $font-list {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    -webkit-tap-highlight-color: transparent;
+    font-family: nth($value, 7);
+    font-size: nth($value, 2);
+    font-weight: nth($value, 5);
+    line-height: $heading-line-height;
+    text-rendering: optimizelegibility;
+    color: nth($value, 6);
+    margin: 0 0 em(12px);
+
+    @media (min-width: $first-breakpoint-value) and  (max-width: $second-breakpoint-value) {
+      font-size: nth($value, 3);
+    }
+
+    @media (min-width: $second-breakpoint-value) {
+      font-size: nth($value, 4);
+    }
+  }
+}

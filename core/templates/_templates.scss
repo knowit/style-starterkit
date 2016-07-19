@@ -1,0 +1,5 @@
+@import 'bourbon', 'neat';
+
+.container {
+  @include outer-container;
+}

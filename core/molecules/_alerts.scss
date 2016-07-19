@@ -1,0 +1,38 @@
+.alert {
+  $success: #dff0d8;
+  $info: #e6f1f3;
+  $warning: #fcf8e3;
+  $danger: #f6e1e1;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+
+  ~ .alert {
+    margin-top: 20px;
+  }
+
+  &--success {
+    background-color: $success;
+    border-color: darken($success, 10%);
+    color: darken($success, 70%);
+  }
+
+  &--info {
+    background-color: $info;
+    border-color: darken($info, 10%);
+    color: darken($info, 70%);
+  }
+
+  &--warning {
+    background-color: $warning;
+    border-color: darken($warning, 10%);
+    color: darken($warning, 70%);
+  }
+
+  &--danger {
+    background-color: $danger;
+    border-color: darken($danger, 10%);
+    color: darken($danger, 70%);
+  }
+}
